@@ -1,0 +1,58 @@
+.INCLUDE "M32DEF.INC"		;ADD Atmega32 definition
+	.ORG 00						;Origin at 0x00
+	LDI R16, 0x00				; define portA input
+	OUT DDRA, R16
+	LDI R16, 0xFF				;define portb OUTput for DAC
+	OUT DDRB, R16
+	LDI R16, 0x87
+	OUT ADCSRA, R16				; enable ADC, ADC clock = ck/128
+	LDI R16, 0xE1
+	OUT ADMUX, R16				; ADC1, Left adjustment result, Vref = 2.56V and ADC1 select
+	.EQU H0 = 0x40
+	.EQU H1 = 0x40
+	.EQU H2 = 0x40
+	.EQU H3 = 0x40
+	LDI R22, 0
+	LDI R23, 0
+	LDI R24, 0
+	LDI R25, 0
+READ_ADC: NOP
+	SBI ADCSRA, ADSC			; Start ADC Conversion
+KEEP_POLLING: NOP				; Wait the end of conversion
+	SBIS ADCSRA, ADIF			; Is it end of conversion yet?
+	RJMP KEEP_POLLING			; Keep polling until END of conversion
+	SBI ADCSRA, ADIF			; write 1 to clear ADIF flag
+	IN R20, ADCL				;ADCL register should be read first
+	IN R21, ADCH				;Read ADCH after ADCL
+
+	LDI R28, H0					;Load filter coefficient H0
+	MOV R22, R21
+	MUL R28, R22				; 2 Clock cycle Multiplication R1:R0 = R28*R22
+	ADD R29, R0
+	ADC R30, R1
+
+	LDI R28, H1					;Load filter coefficient H1
+	MUL R28, R23				; 2 Clock cycle Multiplication R1:R0 = R28*R23
+	ADD R29, R0
+	ADC R30, R1
+
+	LDI R28, H2					;Load filter coefficient H2
+	MUL R28, R24				; 2 Clock cycle Multiplication R1:R0 = R28*R24
+	ADD R29, R0
+	ADC R30, R1
+
+	LDI R28, H3					;Load filter coefficient H3
+	MUL R28, R25				; 2 Clock cycle Multiplication R1:R0 = R28*R24
+	ADD R29, R0
+	ADC R30, R1
+
+	OUT PORTB, R30
+
+	MOV R25, R24
+	MOV R24, R23
+	MOV R23, R22
+
+	LDI R29, 0
+	LDI R30, 0
+
+	RJMP READ_ADC				; Go for Next input sample

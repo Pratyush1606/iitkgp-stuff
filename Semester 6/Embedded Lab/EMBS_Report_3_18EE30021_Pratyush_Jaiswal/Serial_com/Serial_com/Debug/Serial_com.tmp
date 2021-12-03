@@ -1,0 +1,32 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\Debug\Serial_com.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Serial_com.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Serial_com.map</FILE>
+  <FILE>Serial_com.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <USART_Init><FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</FILE><LINE>20</LINE></USART_Init>
+  <filter_init><FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</FILE><LINE>35</LINE></filter_init>
+  <main><FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</FILE><LINE>57</LINE></main>
+  <USART_RECEIVE><FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</FILE><LINE>134</LINE></USART_RECEIVE>
+  <START><FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</FILE><LINE>64</LINE></START>
+  <USART_TRANSMIT><FILE>D:\Personal Files\Semester 6\Embedded Lab\EMBS_Report_3_18EE30021_Pratyush_Jaiswal\Serial_com\Serial_com\main.asm</FILE><LINE>125</LINE></USART_TRANSMIT>
+ </LABELS>
+</ASSEMBLER_INFO>
