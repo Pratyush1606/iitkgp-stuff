@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\Debug\Receiver_code.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Receiver_code.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Receiver_code.map</FILE>
+  <FILE>Receiver_code.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <USART_Init><FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\main.asm</FILE><LINE>19</LINE></USART_Init>
+  <MAIN><FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\main.asm</FILE><LINE>35</LINE></MAIN>
+  <USART_RECEIVE><FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\main.asm</FILE><LINE>40</LINE></USART_RECEIVE>
+  <USART_TRANSMIT><FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\main.asm</FILE><LINE>49</LINE></USART_TRANSMIT>
+  <exit><FILE>D:\Personal Files\Semester 6\Embedded System\Assign_7_18EE30021_19Feb\Receiver_code\Receiver_code\main.asm</FILE><LINE>58</LINE></exit>
+ </LABELS>
+</ASSEMBLER_INFO>

@@ -1,0 +1,29 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\SawTooth_final\SawTooth_final\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\SawTooth_final\SawTooth_final\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m32def.inc</FILE>
+  <FILE>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\SawTooth_final\SawTooth_final\Debug\SawTooth_final.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>SawTooth_final.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>SawTooth_final.map</FILE>
+  <FILE>SawTooth_final.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <START><FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\SawTooth_final\SawTooth_final\main.asm</FILE><LINE>19</LINE></START>
+  <LOOP1><FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\SawTooth_final\SawTooth_final\main.asm</FILE><LINE>21</LINE></LOOP1>
+ </LABELS>
+</ASSEMBLER_INFO>

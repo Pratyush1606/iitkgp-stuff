@@ -1,0 +1,31 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega32"</DEVICE>
+ <WORKING_DIR>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>D:\Atmel Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m32def.inc</FILE>
+  <FILE>D:/Atmel Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\Debug\square_wave_generator.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>square_wave_generator.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>square_wave_generator.map</FILE>
+  <FILE>square_wave_generator.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <LOOP1><FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\main.asm</FILE><LINE>20</LINE></LOOP1>
+  <DELAY><FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\main.asm</FILE><LINE>29</LINE></DELAY>
+  <LOOP2><FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\main.asm</FILE><LINE>31</LINE></LOOP2>
+  <LOOP3><FILE>D:\Personal Files\Semester 6\Embedded System\Assembly Codes\square_wave_generator\square_wave_generator\main.asm</FILE><LINE>33</LINE></LOOP3>
+ </LABELS>
+</ASSEMBLER_INFO>

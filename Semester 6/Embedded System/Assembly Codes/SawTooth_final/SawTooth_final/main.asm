@@ -1,0 +1,25 @@
+;
+; SawTooth_final.asm
+;
+; Created: 07-01-2021 12:19:35
+; Author : Pratyush Jaiswal
+;
+
+
+; Replace with your application code
+.INCLUDE "m32DEF.INC"
+.ORG 0X00
+LDI R16, HIGH(RAMEND)
+OUT SPH, R16
+LDI R16, LOW(RAMEND)
+OUT SPL, R16
+LDI R16, 0XFF
+OUT DDRB, R16
+
+START:
+	LDI R16, 0X64
+	LOOP1:
+	OUT PORTB, R16
+	DEC R16
+	BRNE LOOP1
+	RJMP START
