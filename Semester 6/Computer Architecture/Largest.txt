@@ -1,0 +1,24 @@
+FindLargest:
+// $a0 has base adress and $a1 has n i.e. size of array
+
+lw $t1, 0($a0)   	// t1 has largest number initialized to arr[0]
+lw $t2, 0($a1) 		// load value n in t2
+addi $t3, $r0, 1 	// iterator i initialized at 1
+beq $t2, $t3, EXIT 	// if only one element exit as it initialized to max anyway
+
+LOOP:
+beq $t3, $t2, EXIT 	// if i==n(the iteration is completed) exit the loop
+sll $t4, $t3, 2        	// 4*i
+add $t4, $t4, $a0   	// base + 4*i is the address of arr[i]
+lw $t5, 0($t4)       	// value of arr[i]
+slt $t6, $t5, $t1    	// if t5<t1 then t6=1, no need to do anything
+bne $t6, $r0, INCRE  	// if t6!=0 or say t6==1, no need to update max jump to iterator increment
+add $t1, $r0, $t5 	// update the max
+
+INCRE:
+addi $t3,$t3,1 		// incrementing the iterator
+j LOOP
+
+EXIT:
+add $v0, $t1, $r0 	// returning max
+jr $r31

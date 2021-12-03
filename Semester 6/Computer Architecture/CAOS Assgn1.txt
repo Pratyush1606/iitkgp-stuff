@@ -1,0 +1,66 @@
+findLargest:     // $a0 has base address of array and $a1=k i.e length of the array
+addi $t0,$a0,4   // t0=address of arr[1]
+lw $t1,0($a0)     // initialize t1 as arr[0], it will store the largest number
+sll $t2,$a1,2     // t2=k4
+add  $t2,$a0,$t2 // t2 has address of arr[k]
+LOOP:
+beq $t0,$t2,EXIT // exit if reaches end address, iter from 0 to k-1
+lw $t3,0($t0)    //load current integer 
+slt $t4,$t1,$t3 
+beq $t4,$zero,UPDATE //if t3<t1, skip next instruction 
+add $t1,$t3,$zero    //else largest= current
+UPDATE:
+addi $t0,$t0,4         //next elemnt address
+j LOOP             //jump to LOOP
+EXIT:             //mov the largest integer to $v0 and exit the subroutine
+add $v0,$t1,$zero
+JR $31
+
+
+findLargestOdd::     // $a0 has base address of array and $a1=k i.e length of the array
+addi $t0,$a0,4   // t0=address of arr[1]
+lw $t1,0($a0)     // initialize t1 as arr[0], it will store the largest number
+sll $t2,$a1,2     // t2=k4
+add  $t2,$a0,$t2 // t2 has address of arr[k]
+LOOP:
+beq $t0,$t2,EXIT // exit if reaches end address, iter from 0 to k-1
+lw $t3,0($t0)    //load current integer 
+andi $t4,$t3,1     //get the lsb bit value
+beq $t4,$zero,UPDATE //if even number, then go to next element
+slt $t4,$t1,$t3 
+beq $t4,$zero,UPDATE //if t3<t1, skip next instruction 
+add $t1,$t3,$zero    //else largest= current
+UPDATE:
+addi $t0,$t0,4         //next element address
+j LOOP             //jump to LOOP
+EXIT:             //mov the largest integer to $v0 and exit the subroutine
+add $v0,$t1,$zero
+JR $31
+
+
+
+segregate:
+addi $t0,$a0,$zero  //intialize the base address
+sll $t1,$a1,2
+add $t1,$t1,$a0        //address of arr[k], valid index 0 to k-1
+addi $t2,$t0,$zero
+LOOP:
+beq $t0,$t1,EXIT   //exit if it reaches to arr[k]
+lw $t3,0($t0)      //load the current integer
+andi $t4,$t3,1      //get the lsb 
+addi $t0,$t0,4      //update the current address 
+bne $t4,$zero,LOOP //if odd fetch next elemnt
+SHIFT:             //else shift the each elemnt by one and store the current even number to $t1
+addi $t5,$t0,-4
+addi $t6,$t0,-8
+LOOP2:
+lw $t7,0($t6)
+sw $t7,0($t5)
+addi $t5,$t5,-4
+addi $t6,$t6,-4
+bne $t6,$t2,LOOP2
+sw $t3, 0($t2)
+addi $t2,$t2,4
+j LOOP
+EXIT:
+JR $31

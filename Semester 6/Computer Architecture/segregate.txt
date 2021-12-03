@@ -1,0 +1,36 @@
+segregate:
+// $a0 has base adress and $a1 has n i.e. size of array
+// Here after the end of the segragation, all even numbers will be on the left side and odd numbers
+// on the right of the same array
+
+// So the algorithm involves the logic of shifting on every even occurence to the right side and then
+// putting the even on the left
+
+addi $t0,$a0,$zero  	//intialize the base address
+sll $t1,$a1,2
+add $t1,$t1,$a0	        //address of arr[k], valid index 0 to k-1
+addi $t2,$t0,$zero
+
+LOOP:
+beq $t0,$t1,EXIT   	//exit if it reaches to arr[k]
+lw $t3,0($t0)      	//load the current integer
+andi $t4,$t3,1      	//get the lsb (checking if odd or even)
+addi $t0,$t0,4      	//update the current address 
+bne $t4,$zero,LOOP 	//if odd fetch next elemnt
+
+SHIFT:             	//else shift the each element by one and store the current even number to $t1
+addi $t5,$t0,-4
+addi $t6,$t0,-8
+
+LOOP2:
+lw $t7,0($t6)		// loading into a temporary address
+sw $t7,0($t5)		// and then loading into the left side address
+addi $t5,$t5,-4		// decrementing the window address
+addi $t6,$t6,-4		// decrementing the window address
+bne $t6,$t2,LOOP2
+sw $t3,0($t2)		
+addi $t2,$t2,4		//incrementing from the left side containing the even element
+j LOOP
+
+EXIT:
+jr $r31
