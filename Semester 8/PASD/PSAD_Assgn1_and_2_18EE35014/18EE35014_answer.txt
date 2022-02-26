@@ -332,6 +332,13 @@ Active Power Loss: 0.02027pu = 202.67619kW
 Reactive Power Loss: 0.01351pu = 135.14034kVAR
 
 
+# For 33 nodes network
+The number of iterations for which the solution is feasible is 52
+On 53 iterations, the solution will not be feasible
+Considering the value of alpha for the first iteration equal to 0.05,
+The value of alpha till which the solution is feasible: 2.6
+Until the solution is increased by 260.0%, the solution is feasible.
+
 NB: 10
 Printing nodes and corresponding subtree
 1:  [2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -435,4 +442,11 @@ Printing Power Loss
 Active Power Loss: 0.07838pu = 783.77541kW
 Reactive Power Loss: 0.10365pu = 1036.47099kVAR
 
+
+# For 10 nodes network
+The number of iterations for which the solution is feasible is 21
+On 22 iterations, the solution will not be feasible
+Considering the value of alpha for the first iteration equal to 0.05,
+The value of alpha till which the solution is feasible: 1.05
+Until the solution is increased by 105.0%, the solution is feasible.
 
