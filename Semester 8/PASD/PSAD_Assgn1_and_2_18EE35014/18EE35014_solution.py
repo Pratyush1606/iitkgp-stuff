@@ -367,7 +367,70 @@ class Network:
 
         print()
         print()
-       
+    
+    def get_solution_based_on_alpha(self):
+        '''
+        Function for computing the solution using the convergence criteria
+        
+        Convergence Criteria being used:
+        When |P_loss(k+1) - P_loss(k)| < epsilon and |Q_loss(k+1) - Q_loss(k)| < epsilon
+        then solution has converged.
+        '''
+        epsilon = 0.00001 # Epsilon paramter for convergence
+        # Initialising starting conditions (first itertaion)
+        self.compute_node_currents()
+        self.compute_branch_currents()
+        self.compute_node_voltages()
+        curr_loss = self.compute_power_loss()
+        delta_loss = curr_loss
+        # If it is the first iteration then ignore the convergence checking criteria and go for next itertaion
+        first_iteration = True 
+        while(first_iteration or (not (abs(delta_loss.real) < epsilon and abs(delta_loss.imag) < epsilon))):
+            first_iteration = False
+            self.compute_node_currents()
+            self.compute_branch_currents()
+            self.compute_node_voltages()
+            for node_id in range(2, self.nb+1):
+                curr_node = self.node_map[node_id]
+                if(curr_node.voltage.real<0):
+                    return 
+            last_loss = curr_loss
+            curr_loss = self.compute_power_loss() # Current Loss
+            delta_loss =  curr_loss - last_loss # Calculating the current difference
+
+    def get_iterations_num_based_on_alpha(self):
+        '''
+        Function to get the number of iterations based on increasing alpha
+        '''
+        # Resetting the network to the original data
+        curr_alpha = 0.05
+        iter_count = 0
+        check = True
+        while(check):
+            self.reset()
+            iter_count += 1
+            for node_id in range(2, self.nb+1):
+                curr_node = self.node_map[node_id]
+                curr_node.load = curr_node.load*(1+iter_count*curr_alpha)
+            self.get_solution_based_on_alpha()
+            for node_id in range(2, self.nb+1):
+                curr_node = self.node_map[node_id]
+                if(curr_node.voltage.real<0):
+                    check = False
+                    break
+            if(iter_count>100):
+                print("Not converging")
+                break
+            for node_id in range(2, self.nb+1):
+                curr_node = self.node_map[node_id]
+                curr_node.load = curr_node.load/(1+iter_count*curr_alpha)
+        print(f"# For {self.nb} nodes network")
+        print(f"The number of iterations for which the solution is feasible is {iter_count-1}")
+        print(f"On {iter_count} iteration, the solution will not be feasible")
+        print(f"Considering the value of alpha for the first iteration equal to {curr_alpha},")
+        print(f"The value of alpha till which the solution is feasible: {(iter_count-1)*curr_alpha}")
+        print()
+
 def main(data, nb, base_mva, base_kv):
     # Extracting data from data string
     data = data.split("\n")
@@ -382,6 +445,10 @@ def main(data, nb, base_mva, base_kv):
     network.show_network()
     # Plotting J vs P_dg graphs for different w1 and w2
     network.plot_J_vs_P_dg()
+    # For Assignment 4
+    network.get_iterations_num_based_on_alpha()
+
+    
 
 class Tee(object):
     '''
