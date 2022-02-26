@@ -426,9 +426,10 @@ class Network:
                 curr_node.load = curr_node.load/(1+iter_count*curr_alpha)
         print(f"# For {self.nb} nodes network")
         print(f"The number of iterations for which the solution is feasible is {iter_count-1}")
-        print(f"On {iter_count} iteration, the solution will not be feasible")
+        print(f"On {iter_count} iterations, the solution will not be feasible")
         print(f"Considering the value of alpha for the first iteration equal to {curr_alpha},")
         print(f"The value of alpha till which the solution is feasible: {(iter_count-1)*curr_alpha}")
+        print(f"Until the solution is increased by {((iter_count-1)*curr_alpha)*100}%, the solution is feasible.")
         print()
 
 def main(data, nb, base_mva, base_kv):
@@ -449,7 +450,6 @@ def main(data, nb, base_mva, base_kv):
     network.get_iterations_num_based_on_alpha()
 
     
-
 class Tee(object):
     '''
     Class for displaying on terminal as well as saving to the file
