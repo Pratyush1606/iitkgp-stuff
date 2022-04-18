@@ -1,0 +1,4 @@
+Page 1, 2, 3: (a) Speed = 97.649 rad/s = 932.479 RPM, Power Factor = 0.9, Efficiency = 86.538% (b) Speed = 44.28 rad/s = 422.8 RPM, Power Factor = 0.5, Efficiency = 78.3386%
+Page 4: (a) 2.06 ohm (b) 401.46 N (At 1000RPM), 200.629Nm (At zero speed)
+Page 5, 6: 23.74 s
+Page 7, 8: (a) 700 A (b) 25.2 V (d) Motor Current and Torque(in Percent) = 93.99%

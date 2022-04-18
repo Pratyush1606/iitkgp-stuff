@@ -1,0 +1,26 @@
+Greetings of the day!
+
+Please find the company's response to all the queries.
+ 
+The problem statement has mentioned the "existing monolithic orders and delivery application which should be refactored", yet the current problem statement doesn't specify any of the APIs from the existing architecture leaving a lot of unknowns in the problem. This is making the PS too open for interpretation. 
+We are okay if the PS is too open. We want to see who envisages the best/complex/most practical interpretations
+Do you expect us to build an end-to-end solution or just the dashboard to indicate the uptime/downtime status? 
+Both
+Provide us with a raw DB Schema of the existing monolithic orders and delivery application. 
+You can build your own schema
+There should be a dashboard to indicate the uptime/downtime status of the datacenter and restaurant chains" here what do you mean by restaurant chains, and what data do we have to show for restaurant chains? 
+Restaurant chains means branches/franchise etc. You need to ensure that the restaurant chains have updated softwares/menus/customer info base and most importantly in the event of failure at central IT/datacenter, they should be able to operate with the ability to run business and later sync the differential with the central IT/datacenter
+Do we need to support AWS/GCP/Azure as well in the problem statement? 
+The design and architecture should include a public cloud architecture. As for the software, they can build everything on their local machines but there should be means to integrate a public cloud provider in the future without having to make a whole lot of changes to the software.
+“Design and build” build upon what? Will there be any APIs or (SOURCE CODE) / data given on which we are building this architecture? 
+We leave this to the participants’ creativity.
+"Properly documented source code” What should be in the code - YAML files? Dashboard code?
+Exclude the source code documentation
+
+
+Evaluation Criteria:
+Teams would be judged upon
+Most practical interpretation
+Best end-to-end solution architecture
+Dashboard Design
+Overall Presentation / Software

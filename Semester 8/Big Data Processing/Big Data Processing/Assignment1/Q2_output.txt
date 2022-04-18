@@ -1,0 +1,15 @@
+In NON-SPAM messages, word home occur in the following most occurring words:
+home HOME Home homeleft homeBut
+In SPAM messages, word home occur in the following most occurring words:
+Homeowners Home home
+
+In NON-SPAM messages, word super occur in the following most occurring words:
+supervisor Super superior Superb super
+In SPAM messages, word super occur in the following most occurring words:
+Super superb super SUPER
+
+In NON-SPAM messages, word call occur in the following most occurring words:
+call called Call calling calls
+In SPAM messages, word call occur in the following most occurring words:
+call Call CALL Caller specialcall
+
