@@ -1,0 +1,452 @@
+NB: 33
+Printing nodes and corresponding subtree
+1:  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33, 23, 24, 25, 19, 20, 21, 22]
+2:  [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33, 23, 24, 25, 19, 20, 21, 22]
+3:  [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33, 23, 24, 25]
+4:  [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33]
+5:  [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33]
+6:  [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33]
+7:  [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+8:  [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+9:  [10, 11, 12, 13, 14, 15, 16, 17, 18]
+10:  [11, 12, 13, 14, 15, 16, 17, 18]
+11:  [12, 13, 14, 15, 16, 17, 18]
+12:  [13, 14, 15, 16, 17, 18]
+13:  [14, 15, 16, 17, 18]
+14:  [15, 16, 17, 18]
+15:  [16, 17, 18]
+16:  [17, 18]
+17:  [18]
+18:  []
+19:  [20, 21, 22]
+20:  [21, 22]
+21:  [22]
+22:  []
+23:  [24, 25]
+24:  [25]
+25:  []
+26:  [27, 28, 29, 30, 31, 32, 33]
+27:  [28, 29, 30, 31, 32, 33]
+28:  [29, 30, 31, 32, 33]
+29:  [30, 31, 32, 33]
+30:  [31, 32, 33]
+31:  [32, 33]
+32:  [33]
+33:  []
+
+
+Printing Nodal Data
+Node_Id: 2
+Voltage: 0.99703∠0.0145°pu = 12.62243∠0.0145°kV
+Current: 0.01170∠-30.9493°pu = 0.00924∠-30.9493°kA
+Active Power: 0.01000pu = 100.00000kW
+Reactive Power: 0.00600pu = 60.00000kVAR
+
+Node_Id: 3
+Voltage: 0.98294∠0.0960°pu = 12.44400∠0.0960°kV
+Current: 0.01002∠-23.8665°pu = 0.00791∠-23.8665°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+Node_Id: 4
+Voltage: 0.97546∠0.1617°pu = 12.34928∠0.1617°kV
+Current: 0.01479∠-33.5284°pu = 0.01168∠-33.5284°kA
+Active Power: 0.01200pu = 120.00000kW
+Reactive Power: 0.00800pu = 80.00000kVAR
+
+Node_Id: 5
+Voltage: 0.96806∠0.2283°pu = 12.25563∠0.2283°kV
+Current: 0.00693∠-26.3368°pu = 0.00547∠-26.3368°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00300pu = 30.00000kVAR
+
+Node_Id: 6
+Voltage: 0.94966∠0.1339°pu = 12.02267∠0.1339°kV
+Current: 0.00666∠-18.3011°pu = 0.00526∠-18.3011°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00200pu = 20.00000kVAR
+
+Node_Id: 7
+Voltage: 0.94617∠-0.0965°pu = 11.97855∠-0.0965°kV
+Current: 0.02363∠-26.6615°pu = 0.01867∠-26.6615°kA
+Active Power: 0.02000pu = 200.00000kW
+Reactive Power: 0.01000pu = 100.00000kVAR
+
+Node_Id: 8
+Voltage: 0.94133∠-0.0604°pu = 11.91722∠-0.0604°kV
+Current: 0.02375∠-26.6255°pu = 0.01876∠-26.6255°kA
+Active Power: 0.02000pu = 200.00000kW
+Reactive Power: 0.01000pu = 100.00000kVAR
+
+Node_Id: 9
+Voltage: 0.93506∠-0.1335°pu = 11.83785∠-0.1335°kV
+Current: 0.00676∠-18.5684°pu = 0.00534∠-18.5684°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00200pu = 20.00000kVAR
+
+Node_Id: 10
+Voltage: 0.92924∠-0.1960°pu = 11.76424∠-0.1960°kV
+Current: 0.00681∠-18.6310°pu = 0.00538∠-18.6310°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00200pu = 20.00000kVAR
+
+Node_Id: 11
+Voltage: 0.92838∠-0.1888°pu = 11.75335∠-0.1888°kV
+Current: 0.00583∠-33.8788°pu = 0.00460∠-33.8788°kA
+Active Power: 0.00450pu = 45.00000kW
+Reactive Power: 0.00300pu = 30.00000kVAR
+
+Node_Id: 12
+Voltage: 0.92689∠-0.1773°pu = 11.73436∠-0.1773°kV
+Current: 0.00749∠-30.4337°pu = 0.00592∠-30.4337°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00350pu = 35.00000kVAR
+
+Node_Id: 13
+Voltage: 0.92077∠-0.2686°pu = 11.65697∠-0.2686°kV
+Current: 0.00754∠-30.5250°pu = 0.00596∠-30.5250°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00350pu = 35.00000kVAR
+
+Node_Id: 14
+Voltage: 0.91851∠-0.3473°pu = 11.62828∠-0.3473°kV
+Current: 0.01570∠-34.0373°pu = 0.01240∠-34.0373°kA
+Active Power: 0.01200pu = 120.00000kW
+Reactive Power: 0.00800pu = 80.00000kVAR
+
+Node_Id: 15
+Voltage: 0.91709∠-0.3849°pu = 11.61040∠-0.3849°kV
+Current: 0.00663∠-9.8473°pu = 0.00524∠-9.8473°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00100pu = 10.00000kVAR
+
+Node_Id: 16
+Voltage: 0.91572∠-0.4082°pu = 11.59308∠-0.4082°kV
+Current: 0.00691∠-18.8431°pu = 0.00546∠-18.8431°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00200pu = 20.00000kVAR
+
+Node_Id: 17
+Voltage: 0.91370∠-0.4855°pu = 11.56741∠-0.4855°kV
+Current: 0.00692∠-18.9204°pu = 0.00547∠-18.9204°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00200pu = 20.00000kVAR
+
+Node_Id: 18
+Voltage: 0.91309∠-0.4951°pu = 11.55973∠-0.4951°kV
+Current: 0.01079∠-24.4575°pu = 0.00852∠-24.4575°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+Node_Id: 19
+Voltage: 0.99650∠0.0037°pu = 12.61574∠0.0037°kV
+Current: 0.00988∠-23.9588°pu = 0.00781∠-23.9588°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+Node_Id: 20
+Voltage: 0.99293∠-0.0633°pu = 12.57045∠-0.0633°kV
+Current: 0.00992∠-24.0258°pu = 0.00783∠-24.0258°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+Node_Id: 21
+Voltage: 0.99222∠-0.0827°pu = 12.56153∠-0.0827°kV
+Current: 0.00993∠-24.0452°pu = 0.00784∠-24.0452°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+Node_Id: 22
+Voltage: 0.99158∠-0.1030°pu = 12.55346∠-0.1030°kV
+Current: 0.00993∠-24.0655°pu = 0.00785∠-24.0655°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+Node_Id: 23
+Voltage: 0.97935∠0.0651°pu = 12.39860∠0.0651°kV
+Current: 0.01051∠-28.9895°pu = 0.00830∠-28.9895°kA
+Active Power: 0.00900pu = 90.00000kW
+Reactive Power: 0.00500pu = 50.00000kVAR
+
+Node_Id: 24
+Voltage: 0.97268∠-0.0237°pu = 12.31414∠-0.0237°kV
+Current: 0.04783∠-25.4870°pu = 0.03778∠-25.4870°kA
+Active Power: 0.04200pu = 420.00000kW
+Reactive Power: 0.02000pu = 200.00000kVAR
+
+Node_Id: 25
+Voltage: 0.96936∠-0.0674°pu = 12.27205∠-0.0674°kV
+Current: 0.04799∠-25.5307°pu = 0.03791∠-25.5307°kA
+Active Power: 0.04200pu = 420.00000kW
+Reactive Power: 0.02000pu = 200.00000kVAR
+
+Node_Id: 26
+Voltage: 0.94773∠0.1733°pu = 11.99825∠0.1733°kV
+Current: 0.00686∠-22.4466°pu = 0.00542∠-22.4466°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00250pu = 25.00000kVAR
+
+Node_Id: 27
+Voltage: 0.94517∠0.2295°pu = 11.96579∠0.2295°kV
+Current: 0.00688∠-22.3904°pu = 0.00543∠-22.3904°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00250pu = 25.00000kVAR
+
+Node_Id: 28
+Voltage: 0.93373∠0.3124°pu = 11.82097∠0.3124°kV
+Current: 0.00677∠-18.1225°pu = 0.00535∠-18.1225°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00200pu = 20.00000kVAR
+
+Node_Id: 29
+Voltage: 0.92551∠0.3903°pu = 11.71693∠0.3903°kV
+Current: 0.01501∠-29.8661°pu = 0.01186∠-29.8661°kA
+Active Power: 0.01200pu = 120.00000kW
+Reactive Power: 0.00700pu = 70.00000kVAR
+
+Node_Id: 30
+Voltage: 0.92195∠0.4956°pu = 11.67189∠0.4956°kV
+Current: 0.06860∠-71.0695°pu = 0.05419∠-71.0695°kA
+Active Power: 0.02000pu = 200.00000kW
+Reactive Power: 0.06000pu = 600.00000kVAR
+
+Node_Id: 31
+Voltage: 0.91779∠0.4112°pu = 11.61921∠0.4112°kV
+Current: 0.01804∠-24.6057°pu = 0.01425∠-24.6057°kA
+Active Power: 0.01500pu = 150.00000kW
+Reactive Power: 0.00700pu = 70.00000kVAR
+
+Node_Id: 32
+Voltage: 0.91687∠0.3881°pu = 11.60762∠0.3881°kV
+Current: 0.02537∠-25.0752°pu = 0.02004∠-25.0752°kA
+Active Power: 0.02100pu = 210.00000kW
+Reactive Power: 0.01000pu = 100.00000kVAR
+
+Node_Id: 33
+Voltage: 0.91659∠0.3804°pu = 11.60403∠0.3804°kV
+Current: 0.00787∠-33.3097°pu = 0.00621∠-33.3097°kA
+Active Power: 0.00600pu = 60.00000kW
+Reactive Power: 0.00400pu = 40.00000kVAR
+
+
+Printing Branch Data
+Branch_Id: 1 from 1 to 2
+Current: 0.46128∠-31.8642°pu = 0.36436∠-31.8642°kA
+
+Branch_Id: 2 from 2 to 3
+Current: 0.41033∠-32.6457°pu = 0.32412∠-32.6457°kA
+
+Branch_Id: 18 from 2 to 19
+Current: 0.03966∠-24.0239°pu = 0.03133∠-24.0239°kA
+
+Branch_Id: 3 from 3 to 4
+Current: 0.29521∠-35.3841°pu = 0.23318∠-35.3841°kA
+
+Branch_Id: 22 from 3 to 23
+Current: 0.10631∠-25.8529°pu = 0.08397∠-25.8529°kA
+
+Branch_Id: 19 from 19 to 20
+Current: 0.02978∠-24.0455°pu = 0.02352∠-24.0455°kA
+
+Branch_Id: 4 from 4 to 5
+Current: 0.28043∠-35.4819°pu = 0.22151∠-35.4819°kA
+
+Branch_Id: 23 from 23 to 24
+Current: 0.09581∠-25.5089°pu = 0.07568∠-25.5089°kA
+
+Branch_Id: 20 from 20 to 21
+Current: 0.01986∠-24.0554°pu = 0.01569∠-24.0554°kA
+
+Branch_Id: 5 from 5 to 6
+Current: 0.27359∠-35.7126°pu = 0.21611∠-35.7126°kA
+
+Branch_Id: 24 from 24 to 25
+Current: 0.04799∠-25.5307°pu = 0.03791∠-25.5307°kA
+
+Branch_Id: 21 from 21 to 22
+Current: 0.00993∠-24.0655°pu = 0.00785∠-24.0655°kA
+
+Branch_Id: 6 from 6 to 7
+Current: 0.12803∠-25.5989°pu = 0.10113∠-25.5989°kA
+
+Branch_Id: 25 from 6 to 26
+Current: 0.14330∠-45.5466°pu = 0.11319∠-45.5466°kA
+
+Branch_Id: 7 from 7 to 8
+Current: 0.10440∠-25.3584°pu = 0.08247∠-25.3584°kA
+
+Branch_Id: 26 from 26 to 27
+Current: 0.13702∠-46.6719°pu = 0.10823∠-46.6719°kA
+
+Branch_Id: 8 from 8 to 9
+Current: 0.08065∠-24.9852°pu = 0.06371∠-24.9852°kA
+
+Branch_Id: 27 from 27 to 28
+Current: 0.13078∠-47.9110°pu = 0.10330∠-47.9110°kA
+
+Branch_Id: 9 from 9 to 10
+Current: 0.07394∠-25.5710°pu = 0.05840∠-25.5710°kA
+
+Branch_Id: 28 from 28 to 29
+Current: 0.12495∠-49.4542°pu = 0.09869∠-49.4542°kA
+
+Branch_Id: 10 from 10 to 11
+Current: 0.06719∠-26.2723°pu = 0.05307∠-26.2723°kA
+
+Branch_Id: 29 from 29 to 30
+Current: 0.11092∠-52.0546°pu = 0.08761∠-52.0546°kA
+
+Branch_Id: 11 from 11 to 12
+Current: 0.06142∠-25.5529°pu = 0.04851∠-25.5529°kA
+
+Branch_Id: 30 from 30 to 31
+Current: 0.05120∠-26.1709°pu = 0.04044∠-26.1709°kA
+
+Branch_Id: 12 from 12 to 13
+Current: 0.05395∠-24.8758°pu = 0.04262∠-24.8758°kA
+
+Branch_Id: 31 from 31 to 32
+Current: 0.03317∠-27.0217°pu = 0.02620∠-27.0217°kA
+
+Branch_Id: 13 from 13 to 14
+Current: 0.04645∠-23.9598°pu = 0.03669∠-23.9598°kA
+
+Branch_Id: 32 from 32 to 33
+Current: 0.00787∠-33.3097°pu = 0.00621∠-33.3097°kA
+
+Branch_Id: 14 from 14 to 15
+Current: 0.03111∠-18.8938°pu = 0.02458∠-18.8938°kA
+
+Branch_Id: 15 from 15 to 16
+Current: 0.02459∠-21.3248°pu = 0.01942∠-21.3248°kA
+
+Branch_Id: 16 from 16 to 17
+Current: 0.01769∠-22.2936°pu = 0.01397∠-22.2936°kA
+
+Branch_Id: 17 from 17 to 18
+Current: 0.01079∠-24.4575°pu = 0.00852∠-24.4575°kA
+
+
+Printing Power Loss
+Active Power Loss: 0.02027pu = 202.67619kW
+Reactive Power Loss: 0.01351pu = 135.14034kVAR
+
+
+# For 33 nodes network
+The number of iterations for which the solution is feasible is 52
+On 53 iterations, the solution will not be feasible
+Considering the value of alpha for the first iteration equal to 0.05,
+The value of alpha till which the solution is feasible: 2.6
+Until the solution is increased by 260.0%, the solution is feasible.
+
+NB: 10
+Printing nodes and corresponding subtree
+1:  [2, 3, 4, 5, 6, 7, 8, 9, 10]
+2:  [3, 4, 5, 6, 7, 8, 9, 10]
+3:  [4, 5, 6, 7, 8, 9, 10]
+4:  [5, 6, 7, 8, 9, 10]
+5:  [6, 7, 8, 9, 10]
+6:  [7, 8, 9, 10]
+7:  [8, 9, 10]
+8:  [9, 10]
+9:  [10]
+10:  []
+
+
+Printing Nodal Data
+Node_Id: 2
+Voltage: 0.99290∠-0.5218°pu = 22.83673∠-0.5218°kV
+Current: 0.19102∠-14.5581°pu = 0.08305∠-14.5581°kA
+Active Power: 0.18400pu = 1840.00000kW
+Reactive Power: 0.04600pu = 460.00000kVAR
+
+Node_Id: 3
+Voltage: 0.98738∠-1.2678°pu = 22.70970∠-1.2678°kV
+Current: 0.10506∠-20.4014°pu = 0.04568∠-20.4014°kA
+Active Power: 0.09800pu = 980.00000kW
+Reactive Power: 0.03400pu = 340.00000kVAR
+
+Node_Id: 4
+Voltage: 0.96341∠-2.3305°pu = 22.15840∠-2.3305°kV
+Current: 0.19148∠-16.3216°pu = 0.08325∠-16.3216°kA
+Active Power: 0.17900pu = 1790.00000kW
+Reactive Power: 0.04460pu = 446.00000kVAR
+
+Node_Id: 5
+Voltage: 0.94802∠-2.6519°pu = 21.80438∠-2.6519°kV
+Current: 0.25707∠-51.6783°pu = 0.11177∠-51.6783°kA
+Active Power: 0.15980pu = 1598.00000kW
+Reactive Power: 0.18400pu = 1840.00000kVAR
+
+Node_Id: 6
+Voltage: 0.91717∠-3.7212°pu = 21.09494∠-3.7212°kV
+Current: 0.18733∠-24.1601°pu = 0.08145∠-24.1601°kA
+Active Power: 0.16100pu = 1610.00000kW
+Reactive Power: 0.06000pu = 600.00000kVAR
+
+Node_Id: 7
+Voltage: 0.90717∠-4.1367°pu = 20.86488∠-4.1367°kV
+Current: 0.08683∠-12.1639°pu = 0.03775∠-12.1639°kA
+Active Power: 0.07800pu = 780.00000kW
+Reactive Power: 0.01100pu = 110.00000kVAR
+
+Node_Id: 8
+Voltage: 0.88896∠-4.6184°pu = 20.44602∠-4.6184°kV
+Current: 0.12954∠-7.6050°pu = 0.05632∠-7.6050°kA
+Active Power: 0.11500pu = 1150.00000kW
+Reactive Power: 0.00600pu = 60.00000kVAR
+
+Node_Id: 9
+Voltage: 0.85869∠-5.4036°pu = 19.74998∠-5.4036°kV
+Current: 0.11513∠-12.9599°pu = 0.05005∠-12.9599°kA
+Active Power: 0.09800pu = 980.00000kW
+Reactive Power: 0.01300pu = 130.00000kVAR
+
+Node_Id: 10
+Voltage: 0.83750∠-5.9901°pu = 19.26259∠-5.9901°kV
+Current: 0.19727∠-12.9430°pu = 0.08577∠-12.9430°kA
+Active Power: 0.16400pu = 1640.00000kW
+Reactive Power: 0.02000pu = 200.00000kVAR
+
+
+Printing Branch Data
+Branch_Id: 1 from 1 to 2
+Current: 1.41507∠-21.6576°pu = 0.61525∠-21.6576°kA
+
+Branch_Id: 2 from 2 to 3
+Current: 1.22575∠-22.7613°pu = 0.53293∠-22.7613°kA
+
+Branch_Id: 3 from 3 to 4
+Current: 1.12079∠-22.9824°pu = 0.48730∠-22.9824°kA
+
+Branch_Id: 4 from 4 to 5
+Current: 0.93087∠-24.3496°pu = 0.40472∠-24.3496°kA
+
+Branch_Id: 5 from 5 to 6
+Current: 0.71233∠-14.8129°pu = 0.30971∠-14.8129°kA
+
+Branch_Id: 6 from 6 to 7
+Current: 0.52836∠-11.5116°pu = 0.22972∠-11.5116°kA
+
+Branch_Id: 7 from 7 to 8
+Current: 0.44154∠-11.3834°pu = 0.19197∠-11.3834°kA
+
+Branch_Id: 8 from 8 to 9
+Current: 0.31240∠-12.9492°pu = 0.13582∠-12.9492°kA
+
+Branch_Id: 9 from 9 to 10
+Current: 0.19727∠-12.9430°pu = 0.08577∠-12.9430°kA
+
+
+Printing Power Loss
+Active Power Loss: 0.07838pu = 783.77541kW
+Reactive Power Loss: 0.10365pu = 1036.47099kVAR
+
+
+# For 10 nodes network
+The number of iterations for which the solution is feasible is 21
+On 22 iterations, the solution will not be feasible
+Considering the value of alpha for the first iteration equal to 0.05,
+The value of alpha till which the solution is feasible: 1.05
+Until the solution is increased by 105.0%, the solution is feasible.
+
