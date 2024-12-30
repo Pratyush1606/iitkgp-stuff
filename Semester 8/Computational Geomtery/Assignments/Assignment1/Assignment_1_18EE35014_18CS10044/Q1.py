@@ -73,14 +73,15 @@ def cmp_orientation(point1, point2):
 polar_coords = [points[i] for i in range(num_points) if i!=starting_point_ind]
 polar_coords.sort(key=cmp_to_key(cmp_orientation))
 
-# Inserting starting point at the end for joining the last point to the starting point to close the polygon
+# Inserting starting point at the end and starting for joining the last point to the starting point to close the polygon
 polar_coords.append(points[starting_point_ind])
+polar_coords = [points[starting_point_ind]] + polar_coords
 
+plt.figure()
+plt.plot([x.x for x in polar_coords], [x.y for x in polar_coords])
 # Joining the points
-curr_point = starting_point
-for i in range(num_points):
-    plt.scatter(curr_point.x, polar_coords[i].x, [curr_point.y, polar_coords[i].y])
-    curr_point = polar_coords[i]
+for i in range(len(polar_coords)-1):
+    plt.scatter([polar_coords[i].x, polar_coords[i+1].x], [polar_coords[i].y, polar_coords[i+1].y])
 
 # Showing the plot
 plt.show()
